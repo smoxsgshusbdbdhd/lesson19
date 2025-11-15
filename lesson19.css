@@ -1,0 +1,64 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    animation-name: m1;
+    animation-duration: 5s;
+    /* animation-delay: 4s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-fill-mode: backwards; */
+    /* animation-fill-mode: both; */
+
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate; */
+    /* animation-direction: alternate-reverse; */
+    animation-play-state: paused;
+
+}
+
+/* @keyframes m1 {
+    from {
+        background-color: orange;
+        rotate: 0deg;
+    }
+    to {
+        background-color: green;
+        rotate: 360deg; 
+    }
+} */
+
+@keyframes m1 {
+    0% {
+        background-color: rgb(255, 0, 255);
+        translate: 0 0;
+        rotate: 0deg;
+        border-radius: 0;
+    }
+   25% {
+    background-color: green;
+    translate: 500px 0;
+    rotate: 180deg;
+    border-radius: 50%;
+   } 
+   50% {
+    background-color: blue;
+    translate: 500px 300px;
+    rotate: 360deg;
+    border-radius: 0;
+   }
+    75% {
+     background-color: grey;
+     translate: 0 300px;
+     rotate: 540deg;
+    border-radius: 50%;
+    }
+    100% {
+        background-color: brown;
+        translate: 0 0;
+        rotate: 720deg;
+        border-radius: 0;
+    }
+}
+div:active {
+    animation-play-state: running;
+}
